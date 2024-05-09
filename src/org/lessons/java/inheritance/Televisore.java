@@ -37,19 +37,11 @@ public class Televisore extends Prodotto {
 		} else {
 			return "no";
 		}
-	
 	}
 	
-	
-	
-	public void creaProdotto() {
-		System.out.println("Codice: " + getCodice());
-        System.out.println("Nome: " + getNome());
-        System.out.println("Descrizione: " + getMarca());
-        System.out.println("Prezzo: " + getPrezzo() + "€");
-        System.out.println("IVA: " + getIva());     
-        System.out.println("Prezzo Ivato: " + getPrezzoIvato() + "€");
-        System.out.println("Dimensione: " + getDimensione());
-        System.out.println("Smart TV: " + convertBoolean());
+	public String toString() {
+		return super.toString()
+        + "\nDimensione: " + getDimensione()
+        + "\nSmart TV: " + convertBoolean();
 	}
 }

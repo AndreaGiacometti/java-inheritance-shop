@@ -35,14 +35,9 @@ public class Cuffie extends Prodotto {
 	
 	}
 	
-	public void creaProdotto() {
-		System.out.println("Codice: " + getCodice());
-        System.out.println("Nome: " + getNome());
-        System.out.println("Descrizione: " + getMarca());
-        System.out.println("Prezzo: " + getPrezzo() + "€");
-        System.out.println("IVA: " + getIva());     
-        System.out.println("Prezzo Ivato: " + getPrezzoIvato() + "€");
-        System.out.println("Colore: " + getColore());
-        System.out.println("Tipo di connessione: " + convertBoolean());
+	public String toString() {
+		return super.toString()
+        + "\nColore: " + getColore()
+        + "\nTipo di connessione: " + convertBoolean();
 	}
 }

@@ -29,14 +29,9 @@ public class Smartphone extends Prodotto {
 		return rand.nextInt(10000000);
 	}
 	
-	public void creaProdotto() {
-		System.out.println("Codice: " + getCodice());
-        System.out.println("Nome: " + getNome());
-        System.out.println("Descrizione: " + getMarca());
-        System.out.println("Prezzo: " + getPrezzo() + "€");
-        System.out.println("IVA: " + getIva());     
-        System.out.println("Prezzo Ivato: " + getPrezzoIvato() + "€");
-        System.out.println("Codice Imei: " + getCodiceIMEI());
-        System.out.println("Quantità di memoria: " + getSpazioMemoria() + "GB");
+	public String toString() {
+		return super.toString()
+        + "\nCodice Imei: " + getCodiceIMEI()
+        + "\nQuantità di memoria: " + getSpazioMemoria() + "GB";
 	}
 }

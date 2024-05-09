@@ -71,12 +71,12 @@ public class Prodotto {
 		return rounded.doubleValue();
 	}
 	
-	public void creaProdotto() {
-		System.out.println("Codice: " + getCodice());
-        System.out.println("Nome: " + getNome());
-        System.out.println("Descrizione: " + getMarca());
-        System.out.println("Prezzo: " + getPrezzo() + "€");
-        System.out.println("IVA: " + getIva());     
-        System.out.println("Prezzo Ivato: " + getPrezzoIvato() + "€");
+	public String toString() {
+		return "Codice: " + getCodice()
+		+ "\nNome: " + getNome()
+		+ "\nDescrizione: " + getMarca()
+		+ "\nPrezzo: " + getPrezzo() + "€"
+		+ "\nIVA: " + getIva()
+        + "\nPrezzo Ivato: " + getPrezzoIvato() + "€";
 	}
 }
